@@ -1,0 +1,58 @@
+body {
+  width: 175px;
+}
+.wrapper {
+  align-items: center;
+}
+.margarita {
+  width: 175px;
+  height: 25px;
+  margin: 2px;
+  color: rgb(13, 55, 63);
+  border-radius: 20px;
+  border-color: rgb(16, 98, 112);
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.margarita span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.margarita span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.margarita:hover span {
+  padding-right: 25px;
+}
+
+.margarita:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#personalNote {
+  width: 175px;
+}
+
+#labelNote {
+  font-size: 14px;
+  color: rgb(13, 55, 63);
+}
+
+#clipped {
+  font-size: 16px;
+  color: rgb(13, 55, 63);
+}

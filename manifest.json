@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Air Delva",
+  "version": "2.0",
+  "description": "It fetches the content from currently opened conversation",
+
+  "author": "Oliver",
+
+  "action": {
+    "default_icon": "image.jpg",
+    "default_title": "Air Delva",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "icons": {
+    "16": "image.jpg",
+    "32": "image.jpg",
+    "48": "image.jpg",
+    "128": "image.jpg"
+  },
+  "host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
